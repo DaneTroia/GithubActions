@@ -113,8 +113,8 @@ namespace GithubActionsLab
         [Test]
         public void Power_InvalidTroia()
         {
-            Assert.Throws<FormatException>(() => Program.Power("5", "a"));
-            Assert.Throws<FormatException>(() => Program.Power("a", "5"));
+            Assert.Throws<FormatException>(() => Program.Power("3", "a"));
+            Assert.Throws<FormatException>(() => Program.Power("a", "3"));
             Assert.Throws<FormatException>(() => Program.Power("a", "a"));
         }
 
