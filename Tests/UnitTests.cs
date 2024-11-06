@@ -33,7 +33,7 @@ namespace GithubActionsLab
         [Test]
         public void Subtract_ValidTroia()
         {
-            Assert.AreEqual(3, Program.Subtract("5", "3"));
+            Assert.AreEqual(3, Program.Subtract("5", "2"));
             Assert.AreEqual(0, Program.Subtract("8", "8"));
             Assert.AreEqual(2, Program.Subtract("9", "7"));
         }
@@ -113,8 +113,9 @@ namespace GithubActionsLab
         [Test]
         public void Power_InvalidTroia()
         {
-            Assert.Throws<FormatException>(() => Program.Power("3", "a"));
-            Assert.Throws<FormatException>(() => Program.Power("a", "3"));
+
+            Assert.Throws<FormatException>(() => Program.Power("5", "a"));
+            Assert.Throws<FormatException>(() => Program.Power("a", "5"));
             Assert.Throws<FormatException>(() => Program.Power("a", "a"));
         }
 
